@@ -5,5 +5,11 @@
             "src": "./server.js",
             "use": "@vercel/node"
         }
+    ],
+    "routers":[
+        {
+            "src": "./server.js",
+            "dest":"/"
+        }
     ]
 }
