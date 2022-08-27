@@ -35,12 +35,7 @@ mongoose.connection.on('error',(error)=>{
     console.log("connection error" , error)
 })
 
-app.use(cors({
-    origin: ["*"],
-    methods: ["GET", "POST", "DELETE","PUT"],
-    credentials: true,
-    origin: true,
-})) 
+app.use(cors()) 
 // Use this after the variable declaration
 app.use(express.json());
 
